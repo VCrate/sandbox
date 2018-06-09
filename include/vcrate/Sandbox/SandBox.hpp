@@ -38,7 +38,7 @@ public:
     ui32 get_register(ui32 reg) const;
     void set_register(ui32 reg, ui32 value);
 
-    ui32 get_memory_at(ui32 address);
+    ui32 get_memory_at(ui32 address) const;
     void set_memory_at(ui32 address, ui32 value);
 
     void load_executable(vcx::Executable const& exe);

@@ -45,17 +45,6 @@ ui32 SandBox::get_pc_increment() {
     set_pc(get_pc() + 4);
     return get_pc() - 4;
 }
-/*
-Instruction SandBox::get_instruction() {
-    auto pc = get_pc();
-    return Instruction(get_memory_at(pc), get_memory_at(pc + 4), get_memory_at(pc + 8));
-}
-
-Instruction SandBox::get_instruction_and_move() {
-    auto inst = get_instruction();
-    set_pc(get_pc() + inst.get_byte_size());
-    return inst;
-}*/
 
 void SandBox::set_pc(ui32 value) {
     set_register(btc::register_pc, value);
@@ -132,7 +121,7 @@ void SandBox::set_register(ui32 reg, ui32 value) {
     registers[reg] = value;
 }
 
-ui32 SandBox::get_memory_at(ui32 address) {
+ui32 SandBox::get_memory_at(ui32 address) const {
     return memory.get_32(address);
 }
 
