@@ -2,7 +2,7 @@
 
 #include <vcrate/Sandbox/SandBox.hpp>
 
-using namespace vcrate::interpreter;
+using namespace vcrate::sandbox;
 using namespace vcrate;
 
 int main () {

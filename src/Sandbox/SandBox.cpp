@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-namespace vcrate { namespace interpreter {
+namespace vcrate { namespace sandbox {
 
 namespace btc = ::vcrate::bytecode::v1;
 

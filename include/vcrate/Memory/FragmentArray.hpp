@@ -5,7 +5,7 @@
 #include <stdexcept>
 #include <vector>
 
-namespace vcrate { namespace interpreter {
+namespace vcrate { namespace sandbox {
 
 template<typename T8 = ui8, typename T16 = ui16, typename T32 = ui32, typename T64 = ui64, bool CheckAlignment = false> 
 class FragmentArray {

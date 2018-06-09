@@ -1,9 +1,9 @@
-#include <vcrate/Sandbox/Memory/MemoryOwner.hpp>
+#include <vcrate/Memory/MemoryOwner.hpp>
 
 #include <algorithm>
 #include <stdexcept>
 
-namespace vcrate { namespace interpreter {
+namespace vcrate { namespace sandbox {
 
 MemoryOwner::Block::Block() { reset(); }
 MemoryOwner::Block::Block(ui32 address, ui32 size) : address(address), size(size) {

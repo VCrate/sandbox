@@ -2,12 +2,12 @@
 
 #include <vcrate/Alias.hpp>
 #include <vcrate/vcx/Executable.hpp>
-#include <vcrate/Sandbox/Memory/Memory.hpp>
+#include <vcrate/Memory/Memory.hpp>
 
 #include <vector>
 #include <array>
 
-namespace vcrate { namespace interpreter {
+namespace vcrate { namespace sandbox {
 
 class SandBox {
 public:

@@ -3,10 +3,10 @@
 #include <vector>
 
 #include <vcrate/Alias.hpp>
-#include <vcrate/Sandbox/Memory/FragmentArray.hpp>
-#include <vcrate/Sandbox/Memory/MemoryOwner.hpp>
+#include <vcrate/Memory/FragmentArray.hpp>
+#include <vcrate/Memory/MemoryOwner.hpp>
 
-namespace vcrate { namespace interpreter {
+namespace vcrate { namespace sandbox {
 
 class Memory {
 public:

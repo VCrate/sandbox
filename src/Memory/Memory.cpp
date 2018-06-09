@@ -1,8 +1,8 @@
-#include <vcrate/Sandbox/Memory/Memory.hpp>
+#include <vcrate/Memory/Memory.hpp>
 
 #include <stdexcept>
 
-namespace vcrate { namespace interpreter {
+namespace vcrate { namespace sandbox {
 
 Memory::Memory(ui32 initial_size, ui32 stack_initial_size) : memory(initial_size), allocator() {
     if (initial_size < stack_initial_size)

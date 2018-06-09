@@ -5,7 +5,7 @@
 #include <vector>
 #include <optional>
 
-namespace vcrate { namespace interpreter {
+namespace vcrate { namespace sandbox {
 
 class MemoryOwner {
 public:
