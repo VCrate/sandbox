@@ -3,7 +3,6 @@
 #include <vcrate/Alias.hpp>
 #include <vcrate/vcx/Executable.hpp>
 #include <vcrate/Sandbox/Memory/Memory.hpp>
-#include <vcrate/Instruction/Instruction.hpp>
 
 #include <vector>
 #include <array>
@@ -15,8 +14,6 @@ public:
 
     SandBox(ui32 memory_initial_size = 1 << 16);
 
-    Instruction get_instruction();
-    Instruction get_instruction_and_move();
     ui32 get_pc() const;
     ui32 get_pc_increment();
     void set_pc(ui32 value);
