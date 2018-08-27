@@ -6,10 +6,7 @@
 namespace vcrate { namespace interpreter {
 
 MemoryOwner::Block::Block() { reset(); }
-MemoryOwner::Block::Block(ui32 address, ui32 size) : address(address), size(size) {
-    if (size == 0)
-        throw std::runtime_error("Size can't be null. Use the default-constructor to build a null Block");
-}
+MemoryOwner::Block::Block(ui32 address, ui32 size) : address(address), size(size) {}
 
 MemoryOwner::Block MemoryOwner::Block::null() { 
     return Block(); 
